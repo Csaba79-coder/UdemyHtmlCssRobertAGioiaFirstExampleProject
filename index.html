@@ -8,6 +8,14 @@
         
     </head>
     <body>
+        <!-- in this case you can play the movie, right click on it, and pic in pic mode you can play!-->
+        <!-- <video src="BocaVsLanusArgentina.mp4" type="video.mp4"></video>-->
+        <video width="800", height="800" controls>
+            <source src="BocaVsLanusArgentina.mp4" type="video/mp4">
+        </video>
+
+        <img = src="Csaba.png">
+
         <img src="star.png" alt="star" width="200" height="200">
         <img src="image/checkerboard.jpeg" alt="chess" width="200" height="200">
         <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="fromWeb" width="200" height="200">
@@ -22,7 +30,20 @@
             <area shape="rect" coords="200,200,450,450" href="https://www.google.com" alt="area1">
         </map>
 
-        
+        <button type="button" onclick="alert('Button was clicked!')" autofocus>Button</button>
+        <button type="button" onclick="alert('Button was clicked!')" disabled>Button</button>
+        <button type="button" onclick="this.style.backgroundColor = '#8B0000'" autofocus>Button</button>
+
+        <p onclick="this.style.backgroundColor = 'red'">Example text - Click here!</p>
+        <p onclick="this.style.color = 'red'">Example text - Click here!</p>
+
+        <img src="star.png" onclick="clickFunction()">
+        <script>
+            function clickFunction() {
+                alert("Image was clicked!");
+            }
+        </script>
+
 
         <h1>The content goes here! Heading 1</h1>
         <h2><i>Heading italicized (italics) 2</i></h2>
@@ -72,14 +93,4 @@
             a:link{color: pink;}
         </style>
     </body>
-
-    <img = src="Csaba.png">
-
-    <!-- in this case you can play the movie, right click on it, and pic in pic mode you can play!-->
-    <!-- <video src="BocaVsLanusArgentina.mp4" type="video.mp4"></video>-->
-
-    <video width="800", height="800" controls>
-        <source src="BocaVsLanusArgentina.mp4" type="video/mp4">
-    </video>
-    
 </html>
